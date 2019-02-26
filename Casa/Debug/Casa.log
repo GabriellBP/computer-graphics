@@ -1,0 +1,14 @@
+﻿  Origem.cpp
+d:\gabriel\documentos\ufal\periodo 6\computação gráfica\projetos\opengl\casa\origem.cpp(58): warning C4101: 'i': variável local não referenciada
+d:\gabriel\documentos\ufal\periodo 6\computação gráfica\projetos\opengl\casa\origem.cpp(113): warning C4305: 'argumento': truncamento de 'double' para 'GLfloat'
+d:\gabriel\documentos\ufal\periodo 6\computação gráfica\projetos\opengl\casa\origem.cpp(116): warning C4305: 'argumento': truncamento de 'double' para 'GLfloat'
+d:\gabriel\documentos\ufal\periodo 6\computação gráfica\projetos\opengl\casa\origem.cpp(119): warning C4305: 'argumento': truncamento de 'double' para 'GLfloat'
+d:\gabriel\documentos\ufal\periodo 6\computação gráfica\projetos\opengl\casa\origem.cpp(173): warning C4305: '+=': truncamento de 'double' para 'float'
+d:\gabriel\documentos\ufal\periodo 6\computação gráfica\projetos\opengl\casa\origem.cpp(174): warning C4305: '+=': truncamento de 'double' para 'float'
+d:\gabriel\documentos\ufal\periodo 6\computação gráfica\projetos\opengl\casa\origem.cpp(178): warning C4305: '-=': truncamento de 'double' para 'float'
+d:\gabriel\documentos\ufal\periodo 6\computação gráfica\projetos\opengl\casa\origem.cpp(179): warning C4305: '-=': truncamento de 'double' para 'float'
+d:\gabriel\documentos\ufal\periodo 6\computação gráfica\projetos\opengl\casa\origem.cpp(183): warning C4305: '+=': truncamento de 'double' para 'float'
+d:\gabriel\documentos\ufal\periodo 6\computação gráfica\projetos\opengl\casa\origem.cpp(184): warning C4305: '+=': truncamento de 'double' para 'float'
+d:\gabriel\documentos\ufal\periodo 6\computação gráfica\projetos\opengl\casa\origem.cpp(188): warning C4305: '-=': truncamento de 'double' para 'float'
+d:\gabriel\documentos\ufal\periodo 6\computação gráfica\projetos\opengl\casa\origem.cpp(189): warning C4305: '-=': truncamento de 'double' para 'float'
+  Casa.vcxproj -> D:\Gabriel\Documentos\UFAL\Periodo 6\Computação Gráfica\Projetos\opengl\Debug\Casa.exe
