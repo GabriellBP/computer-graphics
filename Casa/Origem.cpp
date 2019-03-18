@@ -125,8 +125,8 @@ void display(void) {
 	glColor3f(AMARELO); /* Triangulo do Teto tras */
 	glDrawElements(GL_POLYGON, 4, GL_UNSIGNED_BYTE, trianguloTrasIndices);
 	
-	glColor3f(VERDE); /* chao */
-	glDrawElements(GL_POLYGON, 4, GL_UNSIGNED_BYTE, chaoIndices);
+	//glColor3f(VERDE); /* chao */
+	//glDrawElements(GL_POLYGON, 4, GL_UNSIGNED_BYTE, chaoIndices);
 
 	glDisableClientState(GL_VERTEX_ARRAY);
 
