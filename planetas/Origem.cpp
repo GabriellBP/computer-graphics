@@ -8,6 +8,12 @@ static int year = 0, day = 0;
 void init(void) {
 	glClearColor(0.0, 0.0, 0.0, 0.0);
 	glEnable(GL_DEPTH_TEST);
+	glEnable(GL_LIGHTING);
+	glEnable(GL_COLOR_MATERIAL);
+	glEnable(GL_LIGHT0);
+	glLightf(GL_LIGHT0, GL_LINEAR_ATTENUATION, 0);
+	GLfloat lightPosition[] = { -5, 0, 0, 1 };
+	glLightfv(GL_LIGHT0, GL_POSITION, lightPosition);
 }
 
 /*desenha as trnsformacoes*/
@@ -61,11 +67,12 @@ void display(void) {
 void reshape(int w, int h) {
 	glViewport(0, 0, (GLsizei)w, (GLsizei)h);
 
+	glMatrixMode(GL_PROJECTION);
+	gluPerspective(60.0, (GLfloat)w / (GLfloat)h, 1.0, 20.0);
+
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
-
-	gluPerspective(60.0, (GLfloat)w / (GLfloat)h, 1.0, 20.0);
-	gluLookAt(0.0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
+	gluLookAt(0.0, 0.0, 10.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
 
 }
 
@@ -104,7 +111,7 @@ int main(int argc, char *argv[]) {
 	/*inicializa o sistema GLUT*/
 	glutInit(&argc, argv);
 
-	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
+	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
 	glutInitWindowSize(1400, 600);
 	glutInitWindowPosition(100, 100);
 	glutCreateWindow("Rotacao de Planetas");
